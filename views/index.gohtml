@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full bg-gray-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detector de Emoção</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-full flex items-center justify-center">
+  <div class="max-w-xl w-full bg-white p-8 rounded shadow">
+    <h1 class="text-2xl font-bold mb-6 text-center">Detector de Emoção na Escrita</h1>
+    <form method="POST" action="/" class="space-y-4">
+      <textarea name="text" rows="5" placeholder="Digite seu texto aqui..." 
+        class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      <button type="submit" 
+        class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+        Detectar Emoção
+      </button>
+    </form>
+    {{if .Emotion}}
+    <div class="mt-6 p-4 bg-indigo-50 border border-indigo-200 rounded text-indigo-700">
+      <strong>Emoção detectada:</strong> {{.Emotion}}
+    </div>
+    {{end}}
+  </div>
+</body>
+</html>
