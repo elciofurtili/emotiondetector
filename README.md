@@ -1,8 +1,6 @@
-# Emotion Detector MVC
+# Emotion Detector
 
 Projeto simples em Go utilizando o padrão MVC para detectar a emoção predominante em um texto enviado pelo usuário, utilizando a API OpenAI (GPT-3.5-turbo) para processamento e TailwindCSS para estilização da interface web.
-
----
 
 ## Estrutura do Projeto
 
@@ -19,16 +17,12 @@ emotion-detector/
 ├── go.sum
 ```
 
----
-
 ## Tecnologias Utilizadas
 
 - Go (Golang)
 - OpenAI API (gpt-3.5-turbo)
 - TailwindCSS
 - HTML Templates
-
----
 
 ## Como Usar
 
@@ -60,15 +54,11 @@ http://localhost:8080
 
 Digite um texto no campo e envie para detectar a emoção predominante.
 
----
-
 ## Estrutura MVC
 
 - **controllers/emotion.go**: contém a lógica do controlador para manipular requisições, interagir com a API OpenAI e renderizar a view.
 - **views/index.gohtml**: template HTML com TailwindCSS para a interface.
 - **main.go**: configura o servidor HTTP e as rotas.
-
----
 
 ## Detalhes da API OpenAI
 
@@ -76,14 +66,10 @@ Digite um texto no campo e envie para detectar a emoção predominante.
 - O prompt é enviado em português para retornar a emoção no mesmo idioma
 - O resultado é exibido diretamente na página
 
----
-
 ## Estilização
 
 - TailwindCSS via CDN
 - Layout simples, responsivo e clean
-
----
 
 ## Contato
 
